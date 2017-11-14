@@ -287,7 +287,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: rgb(184, 50, 50);
   /* Fallback for when there is no custom background color defined. */ }
 
 hr {
