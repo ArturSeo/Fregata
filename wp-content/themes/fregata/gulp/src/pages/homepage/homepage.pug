@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="en" style="margin-top: 0 !important;")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        // <?php wp_head() ?>
+    body
+        include ../../pug/nav.pug
+        ._wrapper.homepage
+            include homepage__header/homepage__header.pug
+            include homepage__main/homepage__main.pug
+            include homepage__footer/homepage__footer.pug
+        
+        // <?php wp_footer() ?>

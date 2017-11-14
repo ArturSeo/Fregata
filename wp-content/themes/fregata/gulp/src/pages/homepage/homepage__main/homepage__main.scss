@@ -1,0 +1,81 @@
+.homepage__main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media (orientation: landscape) and (max-width: 767px) {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+.main {
+	.main__logo {
+		
+		.logo {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+
+			@include respond-to(xs) { 
+				img { 
+					width: 50%; 
+					height: 50%;
+					margin: 20px auto 5px;
+					display: block;
+				}
+			}
+		}
+		.text {
+			font-family: 'MicrosoftTaiLe';
+			font-size: 160px;
+			color: rgba(183, 40, 54, 255);
+			text-transform: uppercase;
+			@include respond-to(xs) { font-size: 70px; }
+	
+			p {
+				@include respond-to(xs) { line-height: 1em; }
+			}
+		}
+	}
+
+
+	
+	.main__elements {
+		ul {
+			display: flex;
+			justify-content: space-around;
+			width: 700px;
+			@include respond-to(xs) { 
+				flex-direction: column;
+				width: 130px;
+			}
+
+			li {
+				text-transform: uppercase;
+				text-align: center;
+				color: white;
+				font-size: 24px;
+				padding: 3px 20px;
+				margin: 10px 0;
+				font-family: 'SegoeUI_Light';
+				
+				background: rgba(218,72,89,1);
+				background: -moz-linear-gradient(top, rgba(218,72,89,1) 0%, rgba(175,41,55,1) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(218,72,89,1)), color-stop(100%, rgba(175,41,55,1)));
+				background: -webkit-linear-gradient(top, rgba(218,72,89,1) 0%, rgba(175,41,55,1) 100%);
+				background: -o-linear-gradient(top, rgba(218,72,89,1) 0%, rgba(175,41,55,1) 100%);
+				background: -ms-linear-gradient(top, rgba(218,72,89,1) 0%, rgba(175,41,55,1) 100%);
+				background: linear-gradient(to bottom, rgba(218,72,89,1) 0%, rgba(175,41,55,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4859', endColorstr='#af2937', GradientType=0 );
+
+				-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+				box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+
+				@include respond-to(xs) { font-size: 16px; }
+
+			}
+		}
+	}
+}

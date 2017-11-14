@@ -1,0 +1,42 @@
+// Медиа-запросы
+$xxs: 575px;
+$xs: 767px;
+$sm: 768px;
+$md: 992px;
+$lg: 1300px;
+
+@mixin respond-to($media) {
+    @if $media == xxs {
+        @media only screen and (max-width: $xxs) {
+            @content;
+        }
+    }
+    @else if $media == xs {
+        @media only screen and (max-width: $xs) {
+            @content;
+        }
+    }
+    @else if $media == sm {
+        @media only screen and (min-width: $sm){
+            @content;
+        }
+    }
+    @else if $media == md {
+        @media only screen and (min-width: $md) {
+            @content;
+        }
+    }
+    @else if $media == lg {
+        @media only screen and (min-width: $lg) {
+            @content;
+        }
+    }
+}
+
+@include respond-to(xxs) {}
+@include respond-to(xs) {}
+@include respond-to(sm) {}
+@include respond-to(md) {}
+@include respond-to(lg) {}
+
+@media (orientation: landscape) and (max-width: 767px) {}

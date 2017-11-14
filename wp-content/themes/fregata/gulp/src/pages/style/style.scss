@@ -1,0 +1,14 @@
+// Основные стили
+@import 'partials/general.scss';
+
+// Медиа
+@import 'partials/media.scss';
+
+// Меню
+@import 'partials/nav.scss';
+
+// Шрифты
+@import 'partials/fonts.scss';
+
+// Страницы
+@import '../homepage/homepage.scss';
