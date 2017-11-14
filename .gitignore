@@ -1,0 +1,7 @@
+wp-content/themes/fregata/bower_components/*
+wp-content/themes/fregata/gulp/*
+wp-content/themes/fregata/node_modules/*
+wp-content/themes/fregata/psd_makets/*
+phpcs.xml.dist
+gulpfile.js
+block111
