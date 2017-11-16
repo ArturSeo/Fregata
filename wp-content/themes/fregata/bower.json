@@ -1,0 +1,22 @@
+{
+  "name": "fregata",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "gulpfile.js",
+  "authors": [
+    "Denis Timofeev <den.timofeev.1994@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ArturSeo/Fregata",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "css-reset": "^2.5.1",
+    "materialize": "^0.100.2"
+  }
+}

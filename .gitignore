@@ -1,5 +1,5 @@
 *.log
-wp-config.php
+/wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -19,4 +19,8 @@ wp-content/themes/fregata/node_modules/
 /sitemap.xml.gz
 /fregata.sql
 /phpcs.xml.dist
+<<<<<<< HEAD
 /block111
+=======
+/block111
+>>>>>>> 8721158613481ef0da6862256f9ce155a2655991
